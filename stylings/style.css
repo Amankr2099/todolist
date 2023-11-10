@@ -1,0 +1,93 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: #E48586;
+    min-height: 100vh;
+    font-family: Lumanosimo;
+}
+
+.date-section{
+    font-size: 45px;
+    text-align: center;
+    font-family: Nunito Sans;
+}
+.date-section span{
+    font-size: 23px;
+}
+.list-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tasklist{
+    display: flex;
+    flex-direction: row;
+}
+
+.tasklist li{
+    list-style: none;
+    font-size: 20px; 
+    text-align: center;
+    background: #EAC696;
+    color: brown;
+    border: 2px solid brown;
+    border-radius: 20px;
+    margin-block: 10px;
+    padding: 8px;
+}
+
+.tasklist button{
+    background: transparent;
+    border-style: none;
+}
+
+.tasklist i{
+    color: #892a2a;
+    font-size: 5px;
+}
+.tasklist i:hover{
+    font-size: 25px;
+}
+
+/* 
+.list-section input:checked ~ .checkmark{
+    text-decoration: line-through;
+    background-color: #892a2a;
+} */
+
+.input-section{
+    display: flex;
+    flex-direction: row;
+    margin-block: 20px;
+}
+
+.input-section input{
+    border: 2px solid brown;
+    border-radius: 15px;
+    margin-inline: 8px;
+    background: #EAC696;
+    text-align: center;
+    font-family: Lumanosimo;
+}
+.input-section button{
+    background: transparent;
+    border-style: none;
+}
+
+.input-section i{
+    color: #892a2a;
+    font-size: 25px;
+}
+.input-section button i:hover{
+    color: rgb(243, 237, 237);
+}

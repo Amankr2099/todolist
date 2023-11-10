@@ -1,0 +1,25 @@
+<%- include('header'); -%>
+
+    <div class="date-section">
+        <%= listTitle %><span>'s <br>To-do-list</span>
+    </div>
+    <div class="list-section">
+        <% newTasks.forEach(element=> { %>
+            <div class="tasklist">
+                <form action="/delete" method="post">
+                    <button type="submit" name="crossedItem" value="<%= element._id %>">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                    </button>
+                </form>
+                <li>
+                    <%= element.name %>
+                </li>
+            </div>
+            <% }); %>
+    </div>
+    <form action="/" method="post" class="input-section">
+        <input type="text" name="inputTask" placeholder="Add you task">
+        <button type="submit" name="listType" value="<%= listTitle %> "><i class="fa-solid fa-circle-plus"></i></button>
+    </form>
+
+    <%- include('footer'); -%>
